@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCE0ZE20T1"></script>
+    <!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZCE0ZE20T1');
+</script> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  -->
+    <!--    Document Title-->
+    <!-- =============================================-->
+    <title>PARLAYS</title>
+    <!--  -->
+    <!--    Favicons-->
+    <!--    =============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
+    <link rel="manifest" href="assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    <!--    Stylesheets-->
+    <!--    =============================================-->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link
+        href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/scss/map.scss">
+    <link rel="stylesheet" href="./assets/aboutsection.css">
+    <!-- Add Oswald font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
+    <style>
+        .hero-font-oswald {
+            font-family: 'Oswald', Arial, sans-serif !important;
+        }
+    </style>
+</head>
+
+<body class="body" data-spy="scroll" data-target=".inner-link" data-offset="60">
+    <main>
+        <style>
+            @supports (-ms-ime-align:auto) {
+                #preloader .spinner {
+                    display: none !important;
+                }
+
+                #preloader .loader {
+                    display: block !important;
+                }
+            }
+
+            a {
+                color: #fff !important;
+                font-size: 16px;
+
+            }
+
+            .blue-color {
+                color: blue !important;
+            }
+
+            @media screen and (max-width: 600px) {
+
+                .map {
+                    height: 130px !important;
+                }
+
+                .maps-btn {
+                    position: relative;
+                    bottom: 470px;
+                }
+
+                #nav-link-mob {
+                    position: relative;
+                    left: -7px;
+                    margin-bottom: 5px;
+                }
+
+                #contact-btn {
+                    position: relative;
+                    top: 5px;
+                }
+
+                .end-section{
+                    margin-top: -130px !important;
+                }
+                #our-clients {
+                    margin-top: -60px !important;
+                }
+                #below-our-clients {
+                    margin-top: -80px !important;
+                }
+
+
+            }
+        </style>
+        <style>
+            #contact-btn:hover {
+                background-color: #3a006a !important;
+                color: #fff !important;
+            }
+
+            #contact-btn-p {
+                color: #082552 !important;
+                position: relative;
+                top: 10px;
+            }
+
+            #contact-btn:hover #contact-btn-p {
+
+                color: #fff !important;
+            }
+        </style>
+        <style>
+            @media all and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+                #preloader .spinner {
+                    display: none !important;
+                }
+
+                #preloader .loader {
+                    display: block !important;
+                }
+            }
+        </style>
+
+       
+
+        
+
+        <div class="loading" id="preloader">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+                <div id="lottie-animation" style="max-width: 100px;max-height: 100px;"></div>
+                <script>
+                    // Get a reference to the container element
+                    var animationContainer = document.getElementById('lottie-animation');
+
+                    // Load the Lottie animation
+                    var animData = {
+                        container: animationContainer,
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: '/assets/images/Animation - 1706811218774.json' // Path to your Lottie JSON file
+                    };
+
+                    // Play the animation
+                    var anim = lottie.loadAnimation(animData);
+                </script>
+
+
+
+                <div class="loader">
+                    <div class="row text-center align-items-center justify-content-center h-100">
+                        <div class="col-6">
+                            <h4 class="color-white">Loading...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container"
+            style="background-color: transparent; color:black; ;
+            ">
+            <div class="container py-lg-2">
+                <nav class="navbar navbar-expand-lg">
+                    <img src="assets/images/logo/new logo soul.png" alt="Soul Logo" style="width: 140px; height: auto; margin-right: 32px;" />
+                    <a class="navbar-brand overflow-hidden pos-lg-absolute absolute-lg-centered" href="index.html">
+                        <span style="text-transform:capitalize; font-size:20px; color: #a084e8; margin-left: 0; margin-right: 48px;">Home</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger hamburger--emphatic">
+                            <div class="hamburger-box" style="color: #fff;">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav py-0 py-lg-2" style="position: relative;left: 100px; bottom: 4px;">
+                            <li>
+                                
+                                <!-- <ul class="dropdown text-left">
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="spa-&amp;-wellness.html">Spa &amp; Wellness</a>
+                                        </li>
+                                        <li>
+                                            <a href="yoga.html">Yoga &amp; Rellax</a>
+                                        </li>
+                                        <li>
+                                            <a href="wilderness.html">Wilderness</a>
+                                        </li>
+                                        <li>
+                                            <a href="cuisine.html">Cuisine</a>
+                                        </li>
+                                        <li>
+                                            <a href="venues.html">Venues</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="page--rtl.html">RTL Page</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mr-0 py-0 py-lg-2">
+                            <li>
+                                <a href="https://parlay-case-study.lovable.app" target="_blank"
+                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
+                                    id="nav-link-mob">Case Study</a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
+                                    id="nav-link-mob">Portfolio</a>
+                               
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
+                                    id="nav-link-mob">About Us</a>
+                            </li>
+                            <li>
+
+                                <a href="reserve.html" id="contact-btn"
+                                style="position: relative;right: 20px;border: 1px solid #a084e8;background-color: #2A1A40;position:relative;bottom: 5px;left: 5px;padding: 0;display: flex;align-items: center;justify-content: center;min-width: 48px;min-height: 48px;max-width: 48px;max-height: 48px;border-radius: 12px;">
+                                <img src="assets/images/logo/white cal.png" alt="Calendar" style="width: 32px; height: 32px; display: block; margin: auto;" />
+                                </a>
+                                <!-- <ul class="dropdown text-left">
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="reserve.html">reserve</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <script src="navbar.js"></script>
+        <script src="./assets/js/num.js" defer></script>
+
+        <div class="overflow-hidden" style="position: relative;bottom: 105px;">
+            <section class="py-0 text-center header" data-zanim-lg='{"delay":0,"animation":"zoom-out"}'
+                data-zanim-trigger="scroll">
+                <div class="background-holder overlay">
+                    <video autoplay="autoplay" loop="loop" muted="muted">
+                        <source src="assets/videos/Process.mp4" type="video/mp4" />
+                        <source src="assets/videos/Process.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <!--/.background-holder-->
+                <div class="container">
+                    <div class="row h-full align-items-center" style="position: relative;top: 120px;">
+                        <div class="col">
+                            <h1 class="color-white fw-700 ls text-uppercase overflow-hidden" style="margin-bottom: 18px; font-size: 3rem;">
+                                <span class="d-block" data-zanim-xs='{"delay":1.2}' data-zanim-trigger="scroll">Creator Growth Agency</span>
+                            </h1>
+                            <h1 class="color-white fw-700 ls text-uppercase overflow-hidden" style="margin-bottom: 32px; font-size: 2rem;">
+                                <span class="d-block" data-zanim-xs='{"delay":1.3}' data-zanim-trigger="scroll">Master the art of building a loyal, monetizable audience</span>
+                            </h1>
+                            <h5 class="color-white fs-0 fs-sm-1 mb-4" style="max-width: 900px; margin: 0 auto 18px auto; font-size: 1.1rem; text-align: center;">
+                                <span style="display: block;">Do you want to become an authority figure in your niche? While most people that sell info struggle to consistently bring new members onboard and upsell high ticket offers.</span>
+                                <br><br>
+                                <span style="display: block;">Over here in Parlay Edits we will be working and guiding you how to upsell a high ticket offer and make all your client authority figure in their niches.</span>
+                            </h5>
+                            <div data-zanim-xs='{"delay":1.5}' data-zanim-trigger="scroll">
+                                <a class="btn btn-capsule mt-4" href="about.html" data-offset="84" style="background-color: #2A1A40; color: white;">
+                                    Our Story
+                                </a>
+                            </div>
+                        </div>
+                        <a class="btn-down" href="#target-down" data-offset="84" data-zanim-xs='{"delay":2.3}'
+                            data-zanim-trigger="scroll"></a>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+            <div id="target-down"></div>
+        </div>
+        <section class="text-center" id="our-clients" style="margin-top: -100px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-xl-8" style="position: relative;bottom: 80px;">
+                        <div class="overflow-hidden">
+                            <h3 data-zanim-xs='{"delay":0}' data-zanim-trigger="scroll"style="color: #2A1A40;">Our Clients</h3>
+                            <p class="d-inline-block mb-0" style="font-size: 20px;color: black;" >Look at the staggering list of clients that trust Parlays Solution</p>
+                        </div>
+                        <!-- <hr data-zanim-xs='{"delay":0,"animation":"hr-anim"}' data-zanim-trigger="scroll" /> -->
+                        <div class="owl-carousel owl-theme owl-nav-outer owl-dot-round mt-0 mt-lg-5 "
+                        data-options='{"loop":true,"autoplay":true,"touchDrag":true,"responsiveClass":true,"slideBy":1,"responsive":{"0":{"items":2},"768":{"items":3},"1200":{"items":5}},"nav":true}'>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.52 PM (1).jpeg" alt="Client 1" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.52 PM.jpeg" alt="Client 2" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.53 PM (1).jpeg" alt="Client 3" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.53 PM.jpeg" alt="Client 4" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.54 PM (1).jpeg" alt="Client 5" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.54 PM (2).jpeg" alt="Client 6" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.54 PM.jpeg" alt="Client 7" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-26 at 10.39.55 PM.jpeg" alt="Client 8" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-27 at 4.55.18 PM.jpeg" alt="Client 9" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-27 at 4.55.19 PM (1).jpeg" alt="Client 10" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-27 at 4.55.19 PM.jpeg" alt="Client 11" height="130"/>
+                        </div>
+                        <div class="item mx-2 border border-color-8 radius-secondary mb-4 overflow-hidden" style="max-height: 150px;">
+                            <img class="radius-secondary overflow-hidden" src="assets/New client images/WhatsApp Image 2025-06-27 at 4.55.20 PM.jpeg" alt="Client 12" height="130"/>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+
+   
+
+        <section class="overflow-hidden text-center py-9" id="below-our-clients" data-zanim-timeline="{}" data-zanim-trigger="scroll" style="margin-top: -150px;">
+            <div class="background-holder overlay parallax"
+                style="background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url('assets/images/your-background.jpg'); z-index: 0;"> </div>
+            <!--/.background-holder-->
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-11 col-md-10 col-xl-9">
+                        <div class="overflow-hidden">
+                            <h1 class="fs-4 fs-md-5 color-white" data-zanim-xs='{"delay":0.1}'>Grab your spot for a
+                                consultation!</h1>
+                        </div>
+                        <div class="overflow-hidden">
+                            <p class="fw-700 px-lg-5 color-white" data-zanim-xs='{"delay":0.2}'>
+                                Arrange a Free consultation call with Parlays Solution Digital Marketting Agency to Discuss Digital Services</p>
+                        </div>
+                        <div data-zanim-xs='{"delay":0.3}'>
+                            <a class="btn btn-lg btn-capsule btn-outline-white mt-4" href="contact.html">Enquire</a>
+                            <div style="margin: 40px 0; text-align: center; position: relative; display: flex; justify-content: center;">
+                                <video id="parlay-vsl-video" style="max-width: 480px; width: 100%; height: auto; border-radius: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.2); display: block; outline: 3px solid #a084e8; outline-offset: 2px; background: #18122B;" preload="none">
+                                    <source src="assets/videos/Vsl for website 4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <button id="parlay-vsl-play" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.6); border: none; border-radius: 50%; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 2;">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="18" fill="white" fill-opacity="0.8"/>
+                                        <polygon points="14,11 27,18 14,25" fill="#2A1A40"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <script>
+                                const video = document.getElementById('parlay-vsl-video');
+                                const playBtn = document.getElementById('parlay-vsl-play');
+                                playBtn.addEventListener('click', function() {
+                                    video.controls = true;
+                                    video.play();
+                                    playBtn.style.display = 'none';
+                                });
+                                video.addEventListener('pause', function() {
+                                    if (video.currentTime > 0 && video.currentTime < video.duration) {
+                                        playBtn.style.display = 'flex';
+                                        video.controls = false;
+                                    }
+                                });
+                                video.addEventListener('play', function() {
+                                    playBtn.style.display = 'none';
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-5" >
+                <h2 class="fs-3 fs-md-4 text-titlecase" style="color: #2A1A40"> Our goal is to help you escape the rat race of escaping dying info products </h2>
+            </div>
+            <!-- <div class="col-12 py-9 mb-5">
+                
+                <div class="background-holder radius-secondary overlay" style="background-image:url(https://www.azdo.ly/wp-content/uploads/2020/03/clients-banner-1.jpg);background-position: top;"> </div> -->
+                <!--/.background-holder-->
+                   
+                   <!-- https://tdservices.tatapower.com/images/our_partners_and_clients_banner.jpg -->
+           
+            <div class="col-md-10">
+                <p style="text-align: left; color:#fff; font-size: 20px;">We guarantee to add 10,000 USD in MRR to your business in 120 days or less. We will fetch you:<br>
+                    <br><div style="padding-left: 32px;">
+                        <span style="text-align: left; display: block; font-size: 24px;">1. Engagement</span>
+                        <span style="text-align: left; display: block; font-size: 24px;">2. Growth</span>
+                        <span style="text-align: left; display: block; font-size: 24px;">3. Increase Your revenue drastically</span>
+                    </div><br>
+                    <br>And if we don't we will give you a 20%-30% discount till the time we do it for you.<br>
+                </p>
+            </div>
+</section>
+
+       
+        <!-- <p class="banner" style="font-size: 16px;color: black;" id="p-1">Choose our digital agency for unparalleled creativity fused with cutting-edge technology. We specialize in crafting immersive digital experiences that captivate audiences and drive results. With our innovative strategies and relentless commitment to excellence, we elevate your brand to new heights in the digital landscape. Trust us to transform your vision into digital reality, fueling your success in the online world.<br>
+    </p> -->
+        <section class="pt-0 text-center">
+            <div class="container">
+                <div class="row justify-content-center justify-content-lg-start">
+                    <div class="col-12 mb-3 mb-sm-5 text-center" >
+                        <h3 style="color: #2A1A40">We know how to grow you better than anyone else due to our:</h3>
+                        <hr data-zanim-xs='{"delay":0,"animation":"hr-anim"}' data-zanim-trigger="scroll" /> </div>
+                    <div class="col-sm-8 col-md-6 col-xl-4">
+                        <div style="text-align: center; margin-bottom: 2em;">
+                            <b style="font-size: 1.2em;">1. CONTENT STRATEGY</b>
+                            <div style="margin-top: 10px; font-size: 1em;">
+                                We craft platform-specific content strategies designed to grow your audience and strengthen your brand. From ideation to execution, we align your content with what your audience actually cares about.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-6 col-xl-4 mt-7 mt-md-0">
+                        <div style="text-align: center; margin-bottom: 2em;">
+                            <b style="font-size: 1.2em;">2. GROWTH ACCELERATOR STRATEGY</b>
+                            <div style="margin-top: 10px; font-size: 1em;">
+                                With our GROWTH AcceleratOR STRATEGY, we take your product from Idea to Finalized Launched Product through (VSLs), & then help you
+                                STRATEGY, we take your product from Idea to Finalized Launched<br><br>
+                                We craft compelling VSLs to sell your core offer, then build profitable courses that unlock long-term growth and recurring revenue.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-6 col-xl-4 mt-7 mt-xl-0">
+                        <div style="text-align: center; margin-bottom: 2em;">
+                            <b style="font-size: 1.2em;">3. PODCAST ACCELERATOR:</b>
+                            <div style="margin-top: 10px; font-size: 1em;">
+                                With our podcast accelerator strategy, we will help you grow your podcast to attract quality leads and increase revenue
+                                <br><br>
+                                whether by starting a new podcast or optimising an existing one
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+       
+<!-- 
+        <section class="header text-center py-0 map" style="height:500px;position: relative;bottom: 150px;"
+            data-zanim-lg='{"delay":0,"animation":"zoom-out"}' data-zanim-trigger="scroll">
+            <div class="background-holder">
+                <img src="assets/images/Worldmap.webp" alt="">
+            </div> -->
+
+            <!--/.background-holder-->
+            <!-- <div class="container">
+                <div class="row align-items-center h-full">
+                    <div class="col"> -->
+                        <!-- <h5 class="color-blacl fs-0 fs-sm-1 mb-4" data-zanim-xs='{"delay":1.1}' data-zanim-trigger="scroll">Our Prime Work Locations</h5> -->
+                        <!-- <h1 class="color-black fs-3 fs-sm-5 fw-700 ls text-uppercase overflow-hidden">
+                            <span class="d-block" data-zanim-xs='{"delay":1.2}' data-zanim-trigger="scroll"></span>
+                            <span class="d-block" data-zanim-xs='{"delay":1.3}' data-zanim-trigger="scroll"></span>
+                        </h1>
+                      
+                        <div data-zanim-xs='{"delay":1.5}' data-zanim-trigger="scroll"
+                            style="position: relative;top: 220px;">
+                            <a class="btn btn-capsule btn-primary mt-5 maps-btn" href="venue.html" data-offset="84">Our
+                                Working
+                                Culture</a>
+                        </div>
+                    </div>
+
+                </div> -->
+                <!--/.row-->
+            
+       
+    
+
+        
+        <!-- Removed: Our Vision section -->
+       
+        <!-- <section class="background-11">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="overflow-hidden">
+                            <h3 data-zanim-xs='{"delay":0}' data-zanim-trigger="scroll">Testimonials</h3>
+                        </div>
+                        <hr data-zanim-xs='{"delay":0.1,"animation":"hr-anim"}' data-zanim-trigger="scroll" /> </div>
+                    <div class="col-lg-10">
+                        <div class="owl-carousel owl-theme owl-nav-outer owl-dot-round" data-options='{"loop":true,"autoplay":true,"touchDrag":true,"items":1,"animateOut":"fadeOut","autoplayHoverPause":true,"responsiveClass":true,"responsive":{"0":{"nav":false,"dots":true},"768":{"nav":true,"dots":false}}}'>
+                            
+                           
+                            <div class="item">
+                                <div class="row justify-content-center align-items-center py-6">
+                                    <div class="col-8 col-md-3">
+                                        <div class="col-8 col-md-3" style="max-width: 100%;">
+                                            <img class="radius text-center" src="assets/images/cus1.png" alt="" />
+                                        </div>
+                                    </div> -->
+                                    <!-- <div class="col-md-8 mt-4 mt-md-0">
+                                        <div class="overflow-hidden">
+                                            <p style="font-size: 15px; color: black;">
+                                                <span class="mt-3" style="color: #0a2d63; font-size: 20px; font-weight: bold;">Milestones Achieved:</span><br />
+                                                Our front-end development phase has been successfully completed. The
+                                                team has diligently worked to establish a visually appealing and
+                                                intuitively navigable user interface. <br />
+                
+                                                <span class="mt-3" style="color: #0a2d63; font-size: 20px; font-weight: bold;"> Key Achievements :</span><br />
+                                                Include the implementation of responsive design
+                                                principles and the integration of essential third-party APIs to enhance
+                                                the overall functionality of the website. <br />
+                
+                                                <span class="mt-3" style="color:#0a2d63; font-size: 20px; font-weight: bold;">Assurance Initiatives:</span><br />
+                                                Our focus has now shifted to the meticulous back-end development,
+                                                ensuring the robustness of data management and processing. Concurrently,
+                                                our Quality Assurance (QA) team is gearing up for comprehensive testing.
+                                                Rigorous testing protocols will be implemented to guarantee seamless
+                                                functionality, optimal performance, and stringent security
+                                                standards.<br />
+                
+                                                <span class="mt-3" style="color:#0a2d63; font-size: 20px; font-weight: bold;">Client Collaboration:</span><br />
+                                                We highly value your insights and feedback. As we progress, your
+                                                collaboration becomes even more integral. Please feel free to share any
+                                                specific requirements or preferences you may have so that we can tailor
+                                                the website to meet your expectations.
+                                            </p>
+                                            <h6 class="fw-600 fs-0 mt-4 mb-0">Jatin</h6>
+                                            <p class="fs--1 fw-600 mb-0 color-7">Website Development Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+        </section>
+
+        
+
+
+
+        <section class="text-center" style="background-color: #2A1A40;">
+
+
+
+
+
+
+            <div class="container">
+                <div class="row" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                    <div class="col-12" data-zanim-lg='{"delay":0}'>
+                        <a class="color-white mx-3" href="about.html">About Us</a>
+                        <a class="color-white mx-3" href="contact.html">Connect</a>
+                        <a class="color-white mx-3" href="projects.html">Terms &amp; Our Milestones</a>
+                    </div>
+                    <div class="col-12 my-3" data-zanim-lg='{"delay":0.1}'>
+                        <img class="w-15" src="assets/images/Parlay_edits_logo-removebg-preview.png" alt="" />
+                    </div>
+                    <div class="col-12" data-zanim-lg='{"delay":0.2}'>
+                        <p class="font-1 fs-0 color-white">
+                            <!-- <a class="color-white" href="tel:(212)123-4567">(212) 123-4567 </a> -->
+                            <span class="px-3 d-none d-md-inline-block">&#9679;</span>
+                            <br class="d-block d-md-none" />
+                            <span class="mt-4 mt-md-0">Pralay Edits</span>
+                            <span class="px-3 d-none d-md-inline-block">&#9679;</span>
+                            <br class="d-block d-md-none" />
+                            <a class="color-white mt-4 mt-md-0"
+                                href="mailto:nirvana@abc.com">support@parlayedits.com</a>
+                        </p>
+                    </div>
+                    <div class="col-12" data-zanim-lg='{"delay":0.3}'>
+                        <form method="post">
+                            <div class="row align-items-center justify-content-center no-gutters mt-5">
+                                <div class="col-6 col-md-5 px-2">
+                                    <input class="form-control" type="hidden" name="to"
+                                        value="customersupport@siadigitalsolution.com" />
+                                    <input class="form-control border-color-white" type="text"
+                                        placeholder="Enter Email Here" />
+                                </div>
+                                <div class="col-6 col-md-3 px-2">
+                                    <button class="btn btn-block btn-outline-white" type="submit">
+                                        <span>Submit</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="container">
+
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="col-12" data-zanim-lg='{"delay":0.4}'>
+
+                        <h6 class="fw-600 color-7 mt-5">
+
+                            <u>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fab fa-facebook-f text-white"></i></a></li>
+                                    <li><a
+                                            href="https://www.instagram.com/rebelupco?utm_source=qr&igsh=MTYxc3BucGF0NGJjZw=="><i
+                                                class="fab fa-instagram text-white"></i></a></li>
+                                    <li><a href="https://x.com/parlayedit?t=OWqrDAb7WVbej2Qsfaa_ug&s=08"><i class="fab fa-linkedin-in text-white"></i></a></li>
+                                </ul>
+                                <div class="col-12" data-zanim-lg='{"delay":0.4}'>
+                                    <h6 class="fw-600 mt-5" style="color: #ffffff;">
+                                     Copyright @ 2025 © PARLAYS DIGITAL SOLUTIONS
+                                    </h6>
+                                </div>
+                            </u>
+
+                        </h6>
+                    </div>
+
+                </div>
+
+                <!--/.row-->
+            </div>
+
+            <!--/.container-->
+        </section>
+
+    </main>
+    <!--  -->
+    <!--    JavaScripts-->
+    <!--    =============================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/lib/CustomEase.min.js"></script>
+    <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/lib/gsap/src/minified/TimelineMax.min.js"></script>
+    <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/zanimation.js"></script>
+    <script src="assets/lib/rellax/rellax.min.js"></script>
+    <script src="assets/lib/@fontawesome/js/fontawesome-all.min.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-76729372-9');
+    </script>
+
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 855955,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider-min.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/main.js"></script>
+    <style>
+        /* Global dark theme */
+        html, body, main, .znav-white, .znav-container, .navbar, .dropdown, .end-section, .footer, .modal-content {
+            background: #000 !important;
+            color: #fff !important;
+        }
+        .header .container {
+            background: transparent !important;
+        }
+        section, .header {
+            background: transparent !important;
+        }
+        [style*="background-color: white"], [style*="background: white"] {
+            background: #000 !important;
+            color: #fff !important;
+        }
+        /* Headings and accent text */
+        h1, h2, h3, h4, h5, h6, .fw-700, .fw-600, .text-titlecase, .color-white, .color-8, .color-7 {
+            color: #a084e8 !important;
+        }
+        /* Links */
+        a, a:visited, .navbar a, .dropdown a {
+            color: #a084e8 !important;
+            transition: color 0.2s;
+        }
+        a:hover, .navbar a:hover, .dropdown a:hover {
+            color: #fff !important;
+        }
+        /* Buttons */
+        .btn, .btn-capsule, .btn-outline-white, .btn-primary, .btn-lg, .btn-block {
+            background: #2A1A40 !important;
+            color: #fff !important;
+            border: 1px solid #a084e8 !important;
+        }
+        .btn:hover, .btn-outline-white:hover, .btn-primary:hover {
+            background: #a084e8 !important;
+            color: #fff !important;
+            border-color: #a084e8 !important;
+        }
+        /* Borders */
+        .border, .border-color-8, .border-color-9, .radius-secondary {
+            border-color: #2A1A40 !important;
+        }
+        /* Forms */
+        .form-control, input, textarea, select {
+            background: #111 !important;
+            color: #fff !important;
+            border: 1px solid #2A1A40 !important;
+        }
+        .form-control:focus, input:focus, textarea:focus, select:focus {
+            border-color: #a084e8 !important;
+            background: #18122B !important;
+            color: #fff !important;
+        }
+        /* Carousel backgrounds */
+        .owl-carousel .item, .owl-theme .owl-dots .owl-dot span {
+            background: #18122B !important;
+        }
+        /* Social icons */
+        .social-icons i {
+            color: #a084e8 !important;
+        }
+        .social-icons i:hover {
+            color: #fff !important;
+        }
+    </style>
+    <style>
+        .background-holder.overlay.parallax { z-index: 0 !important; }
+        .background-holder.overlay:before { background: rgba(0,0,0,0.15) !important; }
+    </style>
+</body>
+
+</html>

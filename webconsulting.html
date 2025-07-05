@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  -->
+    <!--    Document Title-->
+    <!-- =============================================-->
+    <title>Parlay Edits</title>
+    <!--  -->
+    <!--    Favicons-->
+    <!--    =============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
+    <link rel="manifest" href="assets/images/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  -->
+    <!--    Stylesheets-->
+    <!--    =============================================-->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link
+        href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="body" data-spy="scroll" data-target=".inner-link" data-offset="60">
+    <main>
+        <style>
+            @supports (-ms-ime-align:auto) {
+                #preloader .spinner {
+                    display: none !important;
+                }
+
+                #preloader .loader {
+                    display: block !important;
+                }
+            }
+
+            a {
+                color: #fff !important;
+                font-size: 16px;
+
+            }
+
+            .blue-color {
+                color: blue !important;
+            }
+
+
+            @supports (-ms-ime-align:auto) {
+                #preloader .spinner {
+                    display: none !important;
+                }
+
+                #preloader .loader {
+                    display: block !important;
+                }
+            }
+
+            a {
+                color: #fff !important;
+                font-size: 16px;
+
+            }
+
+            .blue-color {
+                color: blue !important;
+            }
+
+            @media screen and (max-width: 600px) {
+
+                .map {
+                    height: 130px !important;
+                }
+
+                .maps-btn {
+                    position: relative;
+                    bottom: 800px;
+                }
+
+                #nav-link-mob {
+                    position: relative;
+                    left: -7px;
+                    margin-bottom: 5px;
+                }
+
+                #contact-btn {
+                    position: relative;
+                    top: 5px;
+                }
+
+
+            }
+        </style>
+        <style>
+            #contact-btn:hover {
+                background-color: #082552 !important;
+                color: white !important;
+            }
+
+            #contact-btn-p {
+                color: #082552 !important;
+                position: relative;
+                top: 10px;
+            }
+
+            #contact-btn:hover #contact-btn-p {
+
+                color: white !important;
+            }
+
+            .hamburger .hamburger-box {
+                width: 30px;
+                color: white;
+            }
+        </style>
+        <style>
+            @media all and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+                #preloader .spinner {
+                    display: none !important;
+                }
+
+                #preloader .loader {
+                    display: block !important;
+                }
+            }
+        </style>
+        <style>
+            .custom-section {
+                max-width: 1000px;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            .custom-heading {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+
+            .custom-description {
+                font-size: 16px;
+                margin-bottom: 40px;
+                color: black;
+            }
+
+            .custom-card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .custom-card {
+                width: 300px;
+                min-height: 250px;
+                margin: 0 10px 20px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .custom-card-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .custom-card-paragraph {
+                font-size: 16px;
+                margin: 0;
+                text-align: justify;
+                color: black;
+            }
+        </style>
+        <div class="loading" id="preloader">
+            <div class="h-100 d-flex align-items-center justify-content-center">
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+                <div id="lottie-animation" style="max-width: 100px;max-height: 100px;"></div>
+                <script>
+                    // Get a reference to the container element
+                    var animationContainer = document.getElementById('lottie-animation');
+
+                    // Load the Lottie animation
+                    var animData = {
+                        container: animationContainer,
+                        renderer: 'svg',
+                        loop: true,
+                        autoplay: true,
+                        path: '/assets/images/Animation - 1706808317400.json' // Path to your Lottie JSON file
+                    };
+
+                    // Play the animation
+                    var anim = lottie.loadAnimation(animData);
+                </script>
+
+
+
+                <div class="loader">
+                    <div class="row text-center align-items-center justify-content-center h-100">
+                        <div class="col-6">
+                            <h4 class="color-white">Loading...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container"
+            style="background-color: transparent;">
+            <div class="container py-lg-2">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand overflow-hidden pos-lg-absolute absolute-lg-centered" href="index.html">
+                        <span style="text-transform:capitalize; font-size:20px; color: #a084e8; margin-left: 40px;">Home</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger hamburger--emphatic">
+                            <div class="hamburger-box" style="color: #fff;">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav py-0 py-lg-2" style="position: relative;left: 100px; bottom: 4px;">
+                            <li style="display: flex; align-items: center; position: relative;">
+                                <img src="assets/images/logo/new logo soul.png" alt="Soul Logo" style="width: 140px; height: auto; margin-right: 32px; position: absolute; left: -220px;" />
+                                <a href="expertise.html"
+                                    style=" position: relative;right: 55px;text-transform:capitalize;font-size:20px; margin-left: 100px;">Our
+                                    Expertise</a>
+                                <ul class="dropdown" style="min-width: 350px;border-top: 3px solid black;margin-left: -45px;">
+                                    <li>
+                                        <a href="live3d.html"
+                                            style="color:#082552 !important;text-transform: capitalize;font-size: 16px;">-
+                                            Live 3D Websites</a>
+                                    </li>
+                                    <li>
+                                        <a href="webconsulting.html"
+                                            style="color:#082552 !important;text-transform: capitalize;font-size: 16px;">-
+                                            Web Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="csdev.html"
+                                            style="color:#082552 !important;text-transform: capitalize;font-size: 16px;">-
+                                            Custom Software Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="webdesign.html"
+                                            style="color:#082552 !important;text-transform: capitalize;font-size: 16px;">-
+                                            Web Design</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                
+                                <!-- <ul class="dropdown text-left">
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="spa-&amp;-wellness.html">Spa &amp; Wellness</a>
+                                        </li>
+                                        <li>
+                                            <a href="yoga.html">Yoga &amp; Rellax</a>
+                                        </li>
+                                        <li>
+                                            <a href="wilderness.html">Wilderness</a>
+                                        </li>
+                                        <li>
+                                            <a href="cuisine.html">Cuisine</a>
+                                        </li>
+                                        <li>
+                                            <a href="venues.html">Venues</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="page--rtl.html">RTL Page</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="process.html" id="processLinkMobNav"
+                                    style="position: relative;right: 20px;text-transform:capitalize;font-size:20px"
+                                    id="nav-link-mob">Our
+                                    Process</a>
+                                <!-- <ul class="dropdown text-left">
+                                        <li>
+                                            <a href="backpack.html">Guided Backpacking tour</a>
+                                        </li>
+                                        <li>
+                                            <a href="herbal.html">Herbal Medicine 101</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mr-0 py-0 py-lg-2">
+                            <li>
+                                <a href="about.html"
+                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
+                                    id="nav-link-mob">About Us</a>
+                                <!-- <ul class="dropdown text-left">
+                                        <li>
+                                            <a href="blog.html">Blog Archive</a>
+                                        </li>
+                                        <li>
+                                            <a href="single-blog.html">Single Blog</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
+                                    id="nav-link-mob">Projects</a>
+                                <!-- <ul class="dropdown dropdown-align-right text-left">
+                                        <li>
+                                            <a href="components-background.html">Background</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-buttons.html">Buttons</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-colors.html">Colors</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-decorative-helpers.html">Decorative Helpers</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-dropdowns.html">Dropdowns</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-fontawesome.html">Fontawesome</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-googlemap.html">Google Map</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-grid.html">Grid</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-layout-helpers.html">Layout Helpers </a>
+                                        </li>
+                                        <li>
+                                            <a href="components-lightbox.html">Lightbox</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-modals.html">Modals</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-owl-carousel.html">Owl Carousel</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-parallax.html">Parallax</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-php-ajax-form.html">PHP ajax Forms </a>
+                                        </li>
+                                        <li>
+                                            <a href="components-slider.html">Slider</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-spacing.html">Spacing</a>
+                                        </li>
+                                        <li>
+                                            <a href="components-typography.html">Typography</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+                            <li>
+
+                                <a href="reserve.html" id="contact-btn"
+                                style="position: relative;right: 20px;border: 1px solid #a084e8;background-color: #2A1A40;position:relative;bottom: 5px;left: 5px;padding: 0;display: flex;align-items: center;justify-content: center;min-width: 48px;min-height: 48px;max-width: 48px;max-height: 48px;border-radius: 12px;">
+                                <img src="assets/images/logo/cal png.png" alt="Calendar" style="width: 32px; height: 32px; display: block; margin: auto;" />
+                                </a>
+                                <!-- <ul class="dropdown text-left">
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="reserve.html">reserve</a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <script src="navbar.js"></script>
+        <div class="overflow-hidden" style="position: relative;bottom: 105px;">
+            <section class="header text-center py-0" data-zanim-lg='{"delay":0,"animation":"zoom-out"}'
+                data-zanim-trigger="scroll">
+                <div class="background-holder overlay" style="background-image:url(assets/images/webdevbanner1.png);">
+                </div>
+                <!--/.background-holder-->
+                <div class="container">
+                    <div class="row align-items-center py-9">
+                        <div class="col">
+                            <div class="overflow-hidden">
+                                <h5 class="color-white fs-0 fs-sm-1 mb-4" data-zanim-xs='{"delay":0.9}'
+                                    data-zanim-trigger="scroll">Our Expertise</h5>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h1 class="color-white fs-3 fs-sm-5 fw-700 ls mb-4 text-uppercase"
+                                    data-zanim-xs='{"delay":1}' data-zanim-trigger="scroll">SIA Website Consulting
+                                    Service</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-down" href="#target-down" data-offset="84" data-zanim-xs='{"delay":1.5}'
+                        data-zanim-trigger="scroll"></a>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+            <div id="target-down"></div>
+        </div>
+        <section class="background-white pb-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 pr-lg-8" data-zanim-timeline='{"delay":0}' data-zanim-trigger="scroll">
+                        <div class="overflow-hidden">
+                            <h3 data-zanim-xs='{"delay":0}'>Shopify Websites</h3>
+                        </div>
+                        <!-- <div class="overflow-hidden">
+                            <h6 class="fs-0 mt-3 mt-md-4" data-zanim-xs='{"delay":0.1}'>
+                                <span>everyday @ </span>
+                                <br class="d-block d-sm-none" />
+                                <span> 9AM + 5PM</span>
+                                <span class="px-3 d-none d-sm-inline-block">&#9679;</span>
+                                <br class="d-block d-sm-none" />
+                                <span>75 minutes</span>
+                            </h6>
+                        </div> -->
+                        <div class="overflow-hidden">
+                            <p class="mt-4" data-zanim-xs='{"delay":0.2}' style="font-size: 14px;color: black; text-align: justify; " >Discover the perfect blend of functionality and aesthetics with Shopify Websites. Our platform offers unparalleled flexibility, allowing you to create a unique online shopping experience tailored to your brand. From customizable themes to intuitive navigation, we provide the tools you need to stand out in a crowded marketplace.<br><br>
+
+                                With robust features like secure payment processing and mobile responsiveness, Shopify Websites ensure smooth transactions and accessibility across all devices. Whether you're a budding entrepreneur or an established brand, our user-friendly interface makes managing your store a breeze.<br><br>
+
+                    We specialize in providing top-notch Shopify website services, designed to elevate your online presence. Our team consists of seasoned professionals with the expertise to create bespoke Shopify websites that reflect your brand's identity. Trust us to deliver a seamless and engaging online shopping experience for your customers. With our commitment to excellence, we'll transform your Shopify store into a thriving digital storefront that drives results.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-4 mt-lg-0" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
+                        <div class="overflow-hidden">
+                            <h3 data-zanim-xs='{"delay":0}'> WordPress Webistes</h3>
+                        </div>
+                        <!-- <div class="overflow-hidden">
+                            <h6 class="fs-0 mt-3 mt-md-4" data-zanim-xs='{"delay":0.1}'>
+                                <span>everyday @ </span>
+                                <br class="d-block d-sm-none" />
+                                <span>8am</span>
+                                <span class="px-3 d-none d-sm-inline-block">&#9679;</span>
+                                <br class="d-block d-sm-none" />
+                                <span>60 minutes</span>
+                            </h6>
+                        </div> -->
+
+                        <div class="overflow-hidden">
+                            <p class="mt-4" data-zanim-xs='{"delay":0.2}' style="font-size: 14px;color: black; text-align: justify; ">WordPress Websites offer a versatile platform for individuals and businesses alike to establish their online presence. With its user-friendly interface and extensive range of customizable themes, building a professional website has never been easier. From blogs and portfolios to e-commerce stores, WordPress provides the tools necessary to bring your vision to life.<br><br>
+
+                                Experience unparalleled flexibility with WordPress's vast array of plugins, allowing you to add functionality and features tailored to your specific needs. Whether it's enhancing SEO, integrating social media, or optimizing for mobile devices, WordPress ensures your website stays ahead of the curve.<br><br>
+                                
+                                We pride ourselves on offering the best WordPress website services available. Our team comprises experienced individuals dedicated to crafting exceptional websites tailored to your needs. With our expertise and attention to detail, we ensure your website stands out in the digital landscape. Let us bring your vision to life with a stunning WordPress website that leaves a lasting impression on your audience.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-5">
+                        <h3 style="margin-top: 100px;">Book a Free Consultation With Our Expert</h3>
+                        <div style="position: relative; width: 100%; height: 1000px; overflow: hidden;">
+                            <iframe src="https://SIADigitalSolution.as.me/" frameborder="0"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
+
+
+                            <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js"
+                                type="text/javascript"></script>
+                        </div>
+                    </div>
+                </div>
+                <!--/.row-->
+            </div>
+            <!--/.container-->
+
+            <!-- <section class="custom-section" style="position: relative;bottom: 100px;">
+                <h2 class="custom-heading">Section Heading</h2>
+                <p class="custom-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor nisi
+                    eu lorem tristique.</p>
+
+                <div class="custom-card-container">
+                    <div class="custom-card">
+                        <h3 class="custom-card-heading">Card 1</h3>
+                        <p class="custom-card-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
+                            velit eu libero placerat mattis.</p>
+                    </div>
+                    <div class="custom-card">
+                        <h3 class="custom-card-heading">Card 2</h3>
+                        <p class="custom-card-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
+                            velit eu libero placerat mattis.</p>
+                    </div>
+                    <div class="custom-card">
+                        <h3 class="custom-card-heading">Card 3</h3>
+                        <p class="custom-card-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
+                            velit eu libero placerat mattis.</p>
+                    </div>
+
+                </div>
+            </section> -->
+
+            <section class="px-md-6 pt-0 pb-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 p-1 p-md-2">
+                            <img src="assets/images/webdevPOSTER2.png" alt="" />
+                        </div>
+                        <!-- <div class="col-6">
+                            <div class="row">
+                                <div class="col-12 p-1 p-md-2">
+                                    <img src="assets/images/yoga-2.jpg" alt="" />
+                                </div>
+                                <div class="col-12 p-1 p-md-2">
+                                    <img src="assets/images/yoga-5.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-12 p-1 p-md-2">
+                                    <img src="assets/images/yoga-3.jpg" alt="" />
+                                </div>
+                                <div class="col-12 p-1 p-md-2">
+                                    <img src="assets/images/yoga-4.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                        <!--/.row-->
+                    </div>
+                    <!--/.container-->
+            </section>
+
+
+
+            <section class="background-primary text-center">
+                <div class="container">
+                    <div class="row" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                        <div class="col-12" data-zanim-lg='{"delay":0}'>
+                            <a class="color-white mx-3" href="#">About Us</a>
+                            <a class="color-white mx-3" href="#">Connect</a>
+                            <a class="color-white mx-3" href="#">Terms &amp; Products</a>
+                        </div>
+                        <div class="col-12 my-3" data-zanim-lg='{"delay":0.1}'>
+                            <img class="w-15" src="assets/images/SIA-BLACKLOGO.png" alt="" />
+                        </div>
+                        <div class="col-12" data-zanim-lg='{"delay":0.2}'>
+                            <p class="font-1 fs-0 color-white">
+                                <!-- <a class="color-white" href="tel:(212)123-4567">(212) 123-4567 </a> -->
+                                <span class="px-3 d-none d-md-inline-block">&#9679;</span>
+                                <br class="d-block d-md-none" />
+                                <span class="mt-4 mt-md-0">Gaysorn Tower, 127 Ratchadamri Rd, Lumphini, Pathum Wan,
+                                    Bangkok 10330, Thailand </span>
+                                <span class="px-3 d-none d-md-inline-block">&#9679;</span>
+                                <br class="d-block d-md-none" />
+                                <a class="color-white mt-4 mt-md-0"
+                                    href="mailto:nirvana@abc.com">SIADigitalSolution@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="col-12" data-zanim-lg='{"delay":0.3}'>
+                            <form method="post">
+                                <div class="row align-items-center justify-content-center no-gutters mt-5">
+                                    <div class="col-6 col-md-5 px-2">
+                                        <input class="form-control" type="hidden" name="to"
+                                            value="username@domain.extension" />
+                                        <input class="form-control border-color-white" type="text"
+                                            placeholder="Enter Email Here" />
+                                    </div>
+                                    <div class="col-6 col-md-3 px-2">
+                                        <button class="btn btn-block btn-outline-white" type="submit">
+                                            <span>Submit</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12" data-zanim-lg='{"delay":0.4}'>
+
+                            <h6 class="fw-600 color-7 mt-5">
+    
+                                <u>
+                                    <ul class="social-icons">
+                                        <li><a href="#"><i class="fab fa-facebook-f text-white"></i></a></li>
+                                        <li><a
+                                                href="https://www.instagram.com/siadigital_solution?igsh=MTd5cXFpODhjdzdkdg%3D%3D&utm_source=qr"><i
+                                                    class="fab fa-instagram text-white"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in text-white"></i></a></li>
+                                    </ul>
+                                    <div class="col-12" data-zanim-lg='{"delay":0.4}'>
+                                        <h6 class="fw-600 mt-5" style="color: #ffffff;">
+                                         Copyright @ 2024 © Parlay SOLUTIONS
+                                        </h6>
+                                    </div>
+                                </u>
+    
+                            </h6>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+    </main>
+    <!--  -->
+    <!--    JavaScripts-->
+    <!--    =============================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/lib/CustomEase.min.js"></script>
+    <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/lib/gsap/src/minified/TimelineMax.min.js"></script>
+    <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/zanimation.js"></script>
+    <script src="assets/lib/rellax/rellax.min.js"></script>
+    <script src="assets/lib/@fontawesome/js/fontawesome-all.min.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-76729372-9');
+    </script>
+
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 855955,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider-min.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/main.js"></script>
+    <style>
+        /* Global dark theme */
+        html, body, main, .znav-white, .znav-container, .navbar, .dropdown, .end-section, .footer, .modal-content {
+            background: #000 !important;
+            color: #fff !important;
+        }
+        .header .container {
+            background: transparent !important;
+        }
+        section, .header {
+            background: transparent !important;
+        }
+        [style*="background-color: white"], [style*="background: white"], [style*="color: black"], [style*="color:black"] {
+            background: #000 !important;
+            color: #fff !important;
+        }
+        .background-holder.overlay {
+            background: none !important;
+            opacity: 1 !important;
+        }
+        h1, h2, h3, h4, h5, h6, .fw-700, .fw-600, .text-titlecase, .color-white, .color-8, .color-7 {
+            color: #a084e8 !important;
+        }
+        a, a:visited, .navbar a, .dropdown a {
+            color: #a084e8 !important;
+            transition: color 0.2s;
+        }
+        a:hover, .navbar a:hover, .dropdown a:hover {
+            color: #fff !important;
+        }
+        .btn, .btn-capsule, .btn-outline-white, .btn-primary, .btn-lg, .btn-block {
+            background: #2A1A40 !important;
+            color: #fff !important;
+            border: 1px solid #a084e8 !important;
+        }
+        .btn:hover, .btn-outline-white:hover, .btn-primary:hover {
+            background: #a084e8 !important;
+            color: #fff !important;
+            border-color: #a084e8 !important;
+        }
+        .border, .border-color-8, .border-color-9, .radius-secondary {
+            border-color: #2A1A40 !important;
+        }
+        .form-control, input, textarea, select {
+            background: #111 !important;
+            color: #fff !important;
+            border: 1px solid #2A1A40 !important;
+        }
+        .form-control:focus, input:focus, textarea:focus, select:focus {
+            border-color: #a084e8 !important;
+            background: #18122B !important;
+            color: #fff !important;
+        }
+        .owl-carousel .item, .owl-theme .owl-dots .owl-dot span {
+            background: #18122B !important;
+        }
+        .social-icons i {
+            color: #a084e8 !important;
+        }
+        .social-icons i:hover {
+            color: #fff !important;
+        }
+    </style>
+</body>
+
+</html>
