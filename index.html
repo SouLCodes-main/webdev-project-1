@@ -51,6 +51,9 @@
     <!-- Add Oswald font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            background: #000 !important;
+        }
         .hero-font-oswald {
             font-family: 'Oswald', Arial, sans-serif !important;
         }
@@ -149,39 +152,6 @@
 
         
 
-        <div class="loading" id="preloader">
-            <div class="h-100 d-flex align-items-center justify-content-center">
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
-                <div id="lottie-animation" style="max-width: 100px;max-height: 100px;"></div>
-                <script>
-                    // Get a reference to the container element
-                    var animationContainer = document.getElementById('lottie-animation');
-
-                    // Load the Lottie animation
-                    var animData = {
-                        container: animationContainer,
-                        renderer: 'svg',
-                        loop: true,
-                        autoplay: true,
-                        path: '/assets/images/Animation - 1706811218774.json' // Path to your Lottie JSON file
-                    };
-
-                    // Play the animation
-                    var anim = lottie.loadAnimation(animData);
-                </script>
-
-
-
-                <div class="loader">
-                    <div class="row text-center align-items-center justify-content-center h-100">
-                        <div class="col-6">
-                            <h4 class="color-white">Loading...</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container" style="background-color: transparent;">
             <div class="container py-lg-2">
                 <nav class="navbar navbar-expand-lg">
