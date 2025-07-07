@@ -37,6 +37,41 @@
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
+    <style>
+        .znav-white {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100vw !important;
+            z-index: 1050 !important;
+            transition: background-color 0.3s ease-in-out;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .znav-white.scrolled::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100vw;
+            height: 100%;
+            background: #000;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .znav-white .container {
+            position: relative;
+            z-index: 1;
+        }
+        .znav-white .navbar {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .znav-white.scrolled {
+            background-color: #000 !important;
+        }
+    </style>
 </head>
 
 <body class="body" data-spy="scroll" data-target=".inner-link" data-offset="60">
@@ -185,10 +220,9 @@
                 </div>
             </div>
         </div>
-        <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container"
-            style="background-color: transparent;">
+        <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container" style="background-color: transparent;">
             <div class="container py-lg-2">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg" style="padding-left:0;padding-right:0;width:100%;">
                     <a class="navbar-brand overflow-hidden pos-lg-absolute absolute-lg-centered" href="index.html">
                         <span style="text-transform:capitalize; font-size:20px; color: #a084e8; margin-left: 0; margin-right: 48px;">Home</span>
                     </a>
@@ -245,9 +279,7 @@
                                     id="nav-link-mob">Case Study</a>
                             </li>
                             <li>
-                                <a href="projects.html"
-                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
-                                    id="nav-link-mob">Portfolio</a>
+                                <a href="https://bento.me/parlayedits" target="_blank" style="position: relative;right: 55px;text-transform:capitalize;font-size:20px" id="nav-link-mob">Portfolio</a>
                                
                             </li>
                            <li>
@@ -346,12 +378,7 @@
         <div class="overflow-hidden" style="position: relative;bottom: 105px;">
             <section class="py-0 text-center header" data-zanim-lg='{"delay":0,"animation":"zoom-out"}'
                 data-zanim-trigger="scroll">
-                <div class="background-holder overlay">
-                    <video autoplay="autoplay" loop="loop" muted="muted">
-                        <source src="assets/videos/Process.mp4" type="video/mp4" />
-                        <source src="assets/videos/Process.mp4" type="video/mp4" />
-                    </video>
-                </div>
+                <div class="background-holder overlay" style="background-image: url('assets/images/new bg image.jpg'); background-size: cover; background-position: center; width: 100%; height: 100%; min-height: 400px;"></div>
                 <!--/.background-holder-->
                 <div class="container">
                     <div class="row h-full align-items-center" style="position: relative;top: 50px;">
@@ -359,21 +386,10 @@
                             <h5 class="color-white fs-0 fs-sm-1 mb-4" data-zanim-xs='{"delay":1.1}'
                                 data-zanim-trigger="scroll">About Us</h5>
                             <h1 class="color-white fs-3 fs-sm-5 fw-700 ls text-uppercase overflow-hidden">
-                                <span class="d-block" data-zanim-xs='{"delay":1.2}' data-zanim-trigger="scroll">PARLAYS
-                                    </span>
+                                <span class="d-block" data-zanim-xs='{"delay":1.2}' data-zanim-trigger="scroll">PARLAY EDITS</span>
                                 <span class="d-block" data-zanim-xs='{"delay":1.3}'
-                                    data-zanim-trigger="scroll">SOLUTIONS</span>
+                                    data-zanim-trigger="scroll"></span>
                             </h1>
-                            <div class="overflow-hidden" data-zanim-xs='{"delay":1.4}' data-zanim-trigger="scroll">
-                                <a class="fw-500 fs-0 fs-sm-2 color-white" href="#" style="text-decoration: none;">Web
-                                    Development</a>
-                                <span class="px-2 color-white fs--1 d-inline-block">&#9679; </span>
-                                <a class="fw-500 fs-0 fs-sm-2 color-white" href="#"
-                                    style="text-decoration: none;">Software Consulting</a>
-                                <span class="px-2 color-white fs--1 d-inline-block">&#9679; </span>
-                                <a class="fw-500 fs-0 fs-sm-2 color-white" href="#"
-                                    style="text-decoration: none;">Custom Development</a>
-                            </div>
                             <!-- <div data-zanim-xs='{"delay":1.5}' data-zanim-trigger="scroll">
                                     <a class="btn btn-capsule btn-primary mt-5" href="about.html" data-offset="84">Our Story</a>
                                 </div> -->
@@ -392,22 +408,12 @@
         <section style="margin-top: -100px;">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 pl-lg-5 order-lg-2">
-
-                        <div class="col-lg-6 pl-lg-2 order-lg-2">
-                            <video width="169%" controls poster="assets/images/Parlay_edits_logo-removebg-preview.png">
-                              <source  src="assets/videos/Vsl for website 4.MP4" type="video/mp4">
-                            </video>
-                          </div>
-                       
-                    </div>
-                    <div class="col-lg-6 text-lg-center mt-7 mt-lg-0">
-
+                    <div class="col-lg-12 text-center mt-7 mt-lg-0">
                         <div class="col-12 mb-3 mb-md-5 text-center">
                             <h3>All About Parlay's Solutions</h3>
                             <hr data-zanim-xs='{"delay":0,"animation":"hr-anim"}' data-zanim-trigger="scroll" />
                         </div>
-                        <p style="text-align: justify;color: black;font-size: 18px;">
+                        <p style="text-align: center;color: black;font-size: 18px;">
 At ParlayEdits, we turn creators into brands — and brands into movements.<br>
 We're not your average editing service. We're a full-stack creator growth agency built for the bold. From viral short-form videos to conversion-focused content, we help creators, entrepreneurs, and business owners win attention and turn it into revenue.<br>
 Our secret?<br>
@@ -419,10 +425,8 @@ So if you're ready to stop blending in and start standing out —<br>
 Welcome to ParlayEdits.<br>
 This is where growth gets real.
                         </p>
-
                     </div>
                 </div>
-
                 <!--/.row-->
             </div>
             <!--/.container-->
@@ -473,25 +477,6 @@ This is where growth gets real.
         <!-- </div> -->
         <!--/.container-->
         <!-- </section> -->
-        <section class="text-center" style="position: relative;bottom: 0px;margin-top: -150px;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <div class="overflow-hidden">
-                            <h3>
-                                <span class="d-block mb-1" data-zanim-xs='{"delay":0.2}' data-zanim-trigger="scroll" padding-top: 50px; style="opacity: 1;transform: matrix(1, 0, 0, 1, 0, 0);padding-top: 50px;">Is
-                                    Parlays Digital Solutions right for you?</span>
-                                <span class="d-block" data-zanim-xs='{"delay":0.3}' data-zanim-trigger="scroll">Reserve a call and find out</span>
-                            </h3>
-                        </div>
-                        <div data-zanim-xs='{"delay":0.5}' data-zanim-trigger="scroll">
-                            <a class="btn btn-capsule btn-primary border-2x mt-4" href="reserve.html" style="color: #2A1A40;;">reserve now</a>
-                        </div>
-                    </div>
-
-                    <!--/.container-->
-        </section>
-
         <section class="text-center" style="background-color: #2A1A40;">
             <div class="container">
                 <div class="row" data-zanim-timeline="{}" data-zanim-trigger="scroll">
@@ -538,15 +523,12 @@ This is where growth gets real.
 
                             <u>
                                 <ul class="social-icons">
-                                    <li><a href="#"><i class="fab fa-facebook-f text-white"></i></a></li>
-                                    <li><a
-                                            href="https://www.instagram.com/rebelupco?utm_source=qr&igsh=MTYxc3BucGF0NGJjZw=="><i
-                                                class="fab fa-instagram text-white"></i></a></li>
-                                    <li><a href="https://x.com/parlayedit?t=OWqrDAb7WVbej2Qsfaa_ug&s=08"><i class="fab fa-linkedin-in text-white"></i></a></li>
+                                    <li><a href="https://www.instagram.com/siadigital_solution?igsh=MTd5cXFpODhjdzdkdg%3D%3D&utm_source=qr"><i class="fab fa-instagram text-white"></i></a></li>
+                                    <li><a href="https://x.com/parlayedit?t=OWqrDAb7WVbej2Qsfaa_ug&s=08"><img src="assets/images/tweet soul.png" alt="Tweet Soul" style="height: 32px; width: 32px; margin-top: -8px;"></a></li>
                                 </ul>
                                 <div class="col-12" data-zanim-lg='{"delay":0.4}'>
                                     <h6 class="fw-600 mt-5" style="color: #ffffff;">
-                                     Copyright @ 2024 © PARLAYS SOLUTIONS
+                                     Copyright @ 2025 © PARLAYS EDITS
                                     </h6>
                                 </div>
                             </u>
@@ -679,7 +661,32 @@ This is where growth gets real.
         .social-icons i:hover {
             color: #fff !important;
         }
+        .background-holder.overlay[style*="new bg image.jpg"] {
+            min-height: 400px;
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 1 !important;
+            background: url('assets/images/new bg image.jpg') center center/cover no-repeat !important;
+        }
+        section.header .container {
+            position: relative;
+            z-index: 1;
+        }
     </style>
+    <script>
+    window.addEventListener('scroll', function() {
+        var topbar = document.querySelector('.znav-white');
+        if (window.scrollY > 0) {
+            topbar.classList.add('scrolled');
+        } else {
+            topbar.classList.remove('scrolled');
+        }
+    });
+    </script>
 </body>
 
 </html>

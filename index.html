@@ -182,9 +182,7 @@
                 </div>
             </div>
         </div>
-        <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container"
-            style="background-color: transparent; color:black; ;
-            ">
+        <div class="znav-white white-def znav-container znav-fixed w-100 sticky-top" id="znav-container" style="background-color: transparent;">
             <div class="container py-lg-2">
                 <nav class="navbar navbar-expand-lg">
                     <img src="assets/images/logo/new logo soul.png" alt="Soul Logo" style="width: 140px; height: auto; margin-right: 32px;" />
@@ -238,10 +236,7 @@
                                     id="nav-link-mob">Case Study</a>
                             </li>
                             <li>
-                                <a href="projects.html"
-                                    style="position: relative;right: 55px;text-transform:capitalize;font-size:20px"
-                                    id="nav-link-mob">Portfolio</a>
-                               
+                                <a href="https://bento.me/parlayedits" target="_blank" style="position: relative;right: 55px;text-transform:capitalize;font-size:20px" id="nav-link-mob">Portfolio</a>
                             </li>
                             <li>
                                 <a href="about.html"
@@ -275,12 +270,7 @@
         <div class="overflow-hidden" style="position: relative;bottom: 105px;">
             <section class="py-0 text-center header" data-zanim-lg='{"delay":0,"animation":"zoom-out"}'
                 data-zanim-trigger="scroll">
-                <div class="background-holder overlay">
-                    <video autoplay="autoplay" loop="loop" muted="muted">
-                        <source src="assets/videos/Process.mp4" type="video/mp4" />
-                        <source src="assets/videos/Process.mp4" type="video/mp4" />
-                    </video>
-                </div>
+                <div class="background-holder overlay" style="background-image: url('assets/images/new bg image.jpg'); background-size: cover; background-position: center; width: 100%; height: 100%; min-height: 400px;"></div>
                 <!--/.background-holder-->
                 <div class="container">
                     <div class="row h-full align-items-center" style="position: relative;top: 120px;">
@@ -646,15 +636,12 @@
 
                             <u>
                                 <ul class="social-icons">
-                                    <li><a href="#"><i class="fab fa-facebook-f text-white"></i></a></li>
-                                    <li><a
-                                            href="https://www.instagram.com/rebelupco?utm_source=qr&igsh=MTYxc3BucGF0NGJjZw=="><i
-                                                class="fab fa-instagram text-white"></i></a></li>
-                                    <li><a href="https://x.com/parlayedit?t=OWqrDAb7WVbej2Qsfaa_ug&s=08"><i class="fab fa-linkedin-in text-white"></i></a></li>
+                                    <li><a href="https://www.instagram.com/siadigital_solution?igsh=MTd5cXFpODhjdzdkdg%3D%3D&utm_source=qr"><i class="fab fa-instagram text-white"></i></a></li>
+                                    <li><a href="https://x.com/parlayedit?t=OWqrDAb7WVbej2Qsfaa_ug&s=08"><img src="assets/images/tweet soul.png" alt="Tweet Soul" style="height: 32px; width: 32px; margin-top: -8px;"></a></li>
                                 </ul>
                                 <div class="col-12" data-zanim-lg='{"delay":0.4}'>
                                     <h6 class="fw-600 mt-5" style="color: #ffffff;">
-                                     Copyright @ 2025 © PARLAYS DIGITAL SOLUTIONS
+                                     Copyright @ 2025 © PARLAYS EDITS
                                     </h6>
                                 </div>
                             </u>
@@ -792,6 +779,50 @@
     <style>
         .background-holder.overlay.parallax { z-index: 0 !important; }
         .background-holder.overlay:before { background: rgba(0,0,0,0.15) !important; }
+    </style>
+    <style>
+        .background-holder.overlay[style*="new bg image.jpg"] {
+            min-height: 400px;
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 1 !important;
+            background: url('assets/images/new bg image.jpg') center center/cover no-repeat !important;
+        }
+        section.header .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+    <style>
+        .znav-white {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100vw !important;
+            z-index: 1050 !important;
+            transition: background-color 0.3s ease-in-out;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        .znav-white.scrolled::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            width: 100vw;
+            height: 100%;
+            background: #000;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .znav-white .container {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </body>
 
