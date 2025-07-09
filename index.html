@@ -58,6 +58,55 @@
             font-family: 'Oswald', Arial, sans-serif !important;
         }
     </style>
+    <style>
+      @media (max-width: 700px) {
+        .container {
+          width: 100% !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+          box-sizing: border-box;
+        }
+        /* Scale down main hero/landing text */
+        h1, .header h1, .hero-font-oswald, .fw-700, .fw-600 {
+          font-size: 1.5rem !important;
+          line-height: 1.2 !important;
+          text-align: center !important;
+        }
+        .header h1 {
+          font-size: 2rem !important;
+        }
+        .header h5, .header .lead, .header .fs-0, .header .fs-sm-1, .header h2, .header h3, .header h4, .header h5, .header h6 {
+          font-size: 1rem !important;
+          line-height: 1.3 !important;
+          text-align: center !important;
+        }
+        .header p, .header span, .header .lead, .header .fs-0, .header .fs-sm-1 {
+          font-size: 0.95rem !important;
+          text-align: center !important;
+        }
+        .header .btn, .header .btn-capsule {
+          font-size: 1rem !important;
+          padding: 8px 18px !important;
+        }
+        /* General section headings */
+        section h2, section h3, section h4, section h5, section h6 {
+          font-size: 1.2rem !important;
+          text-align: center !important;
+        }
+        /* Remove excessive margins/paddings for better fit */
+        .header .row, .header .col, .header .container {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+        .header .row {
+          top: 60px !important;
+        }
+      }
+    </style>
 </head>
 
 <body class="body" data-spy="scroll" data-target=".inner-link" data-offset="60">
